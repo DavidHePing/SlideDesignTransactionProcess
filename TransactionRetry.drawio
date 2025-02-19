@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="24.9.0">
+  <diagram name="第 1 页" id="hGTuxtv5QtVVCX6dZmEJ">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&amp;nbsp;step 1&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;Insert Record&amp;nbsp;&lt;div&gt;set DebitId&lt;br&gt;&lt;div&gt;set status = &quot;In Progress&quot;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="75" y="65" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-2" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-1" target="on_2z5Dom6N1Y5odPwsy-4" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="150" y="160" as="sourcePoint" />
+            <mxPoint x="150" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-36" value="Insert success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-2" vertex="1" connectable="0">
+          <mxGeometry x="0.02" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-4" value="&lt;div&gt;&lt;b&gt;step 2&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;Call Idempotent&amp;nbsp;Debit API&amp;nbsp;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="72.5" y="245" width="155" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-5" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-4" target="on_2z5Dom6N1Y5odPwsy-6" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="150" y="311" as="sourcePoint" />
+            <mxPoint x="150" y="361" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a7qpmiIhiQkZwCR-u_dC-2" value="Debit success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.0261" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-6" value="&lt;div&gt;&lt;b&gt;step 3&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Update Record&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;set status = &quot;Success&quot;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="85" y="410" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-7" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-1" target="on_2z5Dom6N1Y5odPwsy-8" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="230" y="109.5" as="sourcePoint" />
+            <mxPoint x="310" y="110" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-35" value="Insert falied" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-7" vertex="1" connectable="0">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-8" value="Return insert error" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-9" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-4" target="a7qpmiIhiQkZwCR-u_dC-5" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="230" y="269.5" as="sourcePoint" />
+            <mxPoint x="510" y="360" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a7qpmiIhiQkZwCR-u_dC-6" value="Debit fail" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.1302" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-12" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-4" target="on_2z5Dom6N1Y5odPwsy-13" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="460" y="250" as="sourcePoint" />
+            <mxPoint x="320" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-42" value="Insufficient" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-12" vertex="1" connectable="0">
+          <mxGeometry x="0.0027" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-13" value="Update BetTicket&lt;div&gt;status = &quot;&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Insufficient&lt;/span&gt;&quot;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="185" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-14" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-13" target="a7qpmiIhiQkZwCR-u_dC-5" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="420" y="270" as="sourcePoint" />
+            <mxPoint x="537.824855787278" y="331.7157287525381" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-40" value="Update fail" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.088" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-27" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="on_2z5Dom6N1Y5odPwsy-6" target="a7qpmiIhiQkZwCR-u_dC-5" edge="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="440" y="580" as="sourcePoint" />
+            <mxPoint x="537.824855787278" y="388.28427124746213" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="on_2z5Dom6N1Y5odPwsy-29" value="Update fail" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="on_2z5Dom6N1Y5odPwsy-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.0687" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a7qpmiIhiQkZwCR-u_dC-5" value="&lt;div&gt;&lt;b&gt;Cron Job&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;Check status&amp;nbsp;&lt;span style=&quot;text-align: left;&quot;&gt;== &quot;In Progress&quot;&lt;/span&gt;&lt;div&gt;Start over from &lt;b&gt;step 2&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="360" width="180" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
